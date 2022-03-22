@@ -3,6 +3,8 @@ package com.example.touristapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
+//example commit by grace
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
