@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/activity_main.xml" value="0.2546875" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14361702127659576" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
