@@ -3,6 +3,7 @@ package com.example.touristapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -24,7 +25,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+//        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.nav_view)
+//        val navController = findNavController(R.id.nav_host_fragment)
+//        bottomNavigationView.setupWithNavController(navController)
         val navView: BottomNavigationView = binding.navView
 
         val navHostFragment = supportFragmentManager

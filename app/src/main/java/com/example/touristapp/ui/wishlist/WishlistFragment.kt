@@ -1,4 +1,7 @@
 package com.example.touristapp.ui.wishlist
 
-class WishlistFragment {
+import androidx.fragment.app.Fragment
+import com.example.touristapp.R
+
+class WishlistFragment: Fragment(R.layout.fragment_wishlist) {
 }
