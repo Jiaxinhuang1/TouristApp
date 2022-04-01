@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/cityListFragment">
+
+    <fragment
+        android:id="@+id/cityListFragment"
+        android:name="com.example.touristapp.ui.city.CityListFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_city_list">
+        <action
+            android:id="@+id/action_cityListFragment_to_siteListFragment"
+            app:destination="@id/siteListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/siteListFragment"
+        android:name="com.example.touristapp.ui.site.SiteListFragment"
+        android:label="Movies"
+        tools:layout="@layout/fragment_site_list">
+        <argument
+            android:name="city"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.touristapp.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_wishlist"
+        android:name="com.example.touristapp.ui.wishlist.WishlistFragment"
+        android:label="@string/title_wishlist"
+        tools:layout="@layout/fragment_wishlist" />
+
+    <fragment
+        android:id="@+id/navigation_itinerary"
+        android:name="com.example.touristapp.ui.itinerary.ItineraryFragment"
+        android:label="@string/title_itinerary"
+        tools:layout="@layout/fragment_itinerary" />
+</navigation>

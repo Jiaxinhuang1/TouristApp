@@ -5,8 +5,19 @@
       <map>
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/activity_main.xml" value="0.2546875" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_grid_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_linear_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14361702127659576" />
+        <entry key="app/src/main/res/layout/city_item_view.xml" value="0.10714285714285714" />
+        <entry key="app/src/main/res/layout/fragment_city_list.xml" value="0.10714285714285714" />
+        <entry key="app/src/main/res/layout/fragment_itinerary.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.10714285714285714" />
+        <entry key="app/src/main/res/layout/fragment_site_list.xml" value="0.10714285714285714" />
+        <entry key="app/src/main/res/layout/fragment_wishlist.xml" value="0.10714285714285714" />
+        <entry key="app/src/main/res/layout/site_item_view.xml" value="0.10714285714285714" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/layout_menu.xml" value="0.1638888888888889" />
       </map>
     </option>
   </component>

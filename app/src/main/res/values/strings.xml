@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Around the World</string>
     <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
     <string name="title_wishlist">Wishlist</string>
     <string name="title_itinerary">Itinerary</string>
+
+    <string name="action_switch_layout">Switch Layout</string>
 </resources>
