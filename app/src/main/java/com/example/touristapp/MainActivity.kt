@@ -53,4 +53,8 @@ class MainActivity : AppCompatActivity() {
 //            navController.navigate(R.id.action_navigation_itinerary_to_fragmentItineraryDetails)
 //        }
     }
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment)
+        return navController.navigateUp() || super.onSupportNavigateUp()
+    }
 }

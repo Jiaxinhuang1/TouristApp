@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:text="Name of Place"
         android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,11 +32,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:text="Address"
         android:textAppearance="?attr/textAppearanceBody2"
-        app:layout_constraintTop_toTopOf="@id/ic_location"
         app:layout_constraintBottom_toBottomOf="@id/ic_location"
         app:layout_constraintStart_toEndOf="@id/ic_location"
-        tools:text="Address"/>
+        app:layout_constraintTop_toTopOf="@id/ic_location"
+        tools:text="Address" />
 
     <View
         android:id="@+id/divider_location"
@@ -61,6 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
+        android:text="Has Visited Before"
         android:textAppearance="?attr/textAppearanceBody2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ic_check"
@@ -90,11 +93,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:text="04/04/2022"
         android:textAppearance="?attr/textAppearanceBody2"
-        app:layout_constraintTop_toTopOf="@+id/ic_calendar"
         app:layout_constraintBottom_toBottomOf="@id/ic_calendar"
         app:layout_constraintStart_toEndOf="@id/ic_calendar"
-        tools:text="Date Visited or Plan to Visit" />
+        app:layout_constraintTop_toTopOf="@+id/ic_calendar"
+        tools:text="Date" />
 
     <View
         android:id="@+id/divider_notes"
@@ -123,11 +127,12 @@
         android:ellipsize="end"
         android:maxLines="6"
         android:singleLine="false"
+        android:text="This place was amazing"
         android:textAppearance="?attr/textAppearanceBody2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ic_note"
         app:layout_constraintTop_toTopOf="@+id/ic_note"
-        tools:text="Notes" />
+        tools:text="Note" />
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
