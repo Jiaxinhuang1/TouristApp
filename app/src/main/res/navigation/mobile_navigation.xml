@@ -41,5 +41,30 @@
         android:id="@+id/navigation_itinerary"
         android:name="com.example.touristapp.ui.itinerary.ItineraryFragment"
         android:label="@string/title_itinerary"
-        tools:layout="@layout/fragment_itinerary" />
+        tools:layout="@layout/fragment_itinerary" >
+        <action
+            android:id="@+id/action_navigation_itinerary_to_fragmentItineraryDetails"
+            app:destination="@id/fragmentItineraryDetails" />
+        <action
+            android:id="@+id/action_navigation_itinerary_to_fragmentAddItinerary"
+            app:destination="@id/fragmentAddItinerary" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentItineraryDetails"
+        android:name="com.example.touristapp.ui.itinerary.FragmentItineraryDetails"
+        android:label="fragment_itinerary_details"
+        tools:layout="@layout/fragment_itinerary_details" >
+        <action
+            android:id="@+id/action_fragmentItineraryDetails_to_fragmentAddItinerary"
+            app:destination="@id/fragmentAddItinerary" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAddItinerary"
+        android:name="com.example.touristapp.ui.itinerary.FragmentAddItinerary"
+        android:label="fragment_add_itinerary"
+        tools:layout="@layout/fragment_add_itinerary" >
+        <action
+            android:id="@+id/action_fragmentAddItinerary_to_navigation_itinerary"
+            app:destination="@id/navigation_itinerary" />
+    </fragment>
 </navigation>

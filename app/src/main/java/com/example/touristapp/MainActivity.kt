@@ -3,6 +3,7 @@ package com.example.touristapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -45,5 +46,11 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
+//        val detailsButton = findViewById<Button>(R.id.DetailsBtn)
+//        detailsButton.setOnClickListener {
+//            navController.navigate(R.id.action_navigation_itinerary_to_fragmentItineraryDetails)
+//        }
     }
 }
