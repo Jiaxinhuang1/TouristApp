@@ -10,8 +10,9 @@
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/fragment_add_itinerary.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/fragment_city_list.xml" value="0.2546875" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/fragment_home.xml" value="0.2546875" />
-        <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/fragment_itinerary.xml" value="0.2546875" />
+        <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/fragment_itinerary.xml" value="0.132" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/fragment_itinerary_details.xml" value="0.2546875" />
+        <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/fragment_itinerary_list_item.xml" value="0.2546875" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/fragment_search.xml" value="0.2546875" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/fragment_site_list.xml" value="0.2546875" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/layout/fragment_wishlist.xml" value="0.22826086956521738" />
@@ -20,11 +21,6 @@
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/menu/layout_menu.xml" value="0.2546875" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/menu/menu.xml" value="0.2546875" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/menu/menu_bottom.xml" value="0.2546875" />
-        <entry key="app/src/main/res/layout/fragment_add_itinerary.xml" value="0.10092592592592593" />
-        <entry key="app/src/main/res/layout/fragment_itinerary_details.xml" value="0.10092592592592593" />
-        <entry key="app/src/main/res/layout/fragment_site_details.xml" value="0.2953125" />
-        <entry key="app/src/main/res/layout/site_item_view.xml" value="0.4747708355938947" />
-        <entry key="app/src/main/res/layout/wishlist_item_view.xml" value="0.2953125" />
       </map>
     </option>
   </component>

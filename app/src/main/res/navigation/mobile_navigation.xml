@@ -63,21 +63,29 @@
             app:destination="@id/fragmentAddItinerary" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentItineraryDetails"
-        android:name="com.example.touristapp.ui.itinerary.FragmentItineraryDetails"
-        android:label="fragment_itinerary_details"
-        tools:layout="@layout/fragment_itinerary_details" >
-        <action
-            android:id="@+id/action_fragmentItineraryDetails_to_fragmentAddItinerary"
-            app:destination="@id/fragmentAddItinerary" />
-    </fragment>
-    <fragment
         android:id="@+id/fragmentAddItinerary"
         android:name="com.example.touristapp.ui.itinerary.FragmentAddItinerary"
-        android:label="fragment_add_itinerary"
+        android:label="@string/title_itinerary"
         tools:layout="@layout/fragment_add_itinerary" >
         <action
             android:id="@+id/action_fragmentAddItinerary_to_navigation_itinerary"
             app:destination="@id/navigation_itinerary" />
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentItineraryDetails"
+        android:name="com.example.touristapp.ui.itinerary.FragmentItineraryDetails"
+        android:label="@string/title_itinerary"
+        tools:layout="@layout/fragment_itinerary_details" >
+        <argument
+            android:name="id"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_fragmentItineraryDetails_to_fragmentAddItinerary"
+            app:destination="@id/fragmentAddItinerary" />
     </fragment>
 </navigation>

@@ -136,11 +136,12 @@
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/edit_forageable_fab"
+        android:id="@+id/edit_itinerary_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="@dimen/fab_margin"
         android:src="@drawable/ic_baseline_edit_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
