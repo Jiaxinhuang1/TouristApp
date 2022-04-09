@@ -11,10 +11,11 @@ object TempDataSourceObj {
         City(
             R.drawable.austin,
             "Austin"
+        ),
+        City(
+            R.drawable.paris,
+            "Paris"
         )
-//        City(
-//            "Paris"
-//        ),
 //        City(
 //            "London"
 //        ),
@@ -28,24 +29,27 @@ object TempDataSourceObj {
 
     val sites: List<Site> = listOf(
         Site(
+            R.drawable.zilker_park,
             "Zilker Park",
             "Austin",
             "Park"
         ),
         Site(
+            R.drawable.texas_state_capitol,
             "Texas State Capitol",
             "Austin",
             "Historical Landmark"
         ),
         Site(
+            R.drawable.louvre,
             "The Louvre",
             "Paris",
             "Museum"
-        ),
-        Site(
-            "Tokyo Tower",
-            "Tokyo",
-            "Modern Landmark"
         )
+//        Site(
+//            "Tokyo Tower",
+//            "Tokyo",
+//            "Modern Landmark"
+//        )
     )
 }

@@ -18,10 +18,23 @@
     <fragment
         android:id="@+id/siteListFragment"
         android:name="com.example.touristapp.ui.site.SiteListFragment"
-        android:label="Movies"
+        android:label="Site"
         tools:layout="@layout/fragment_site_list">
         <argument
             android:name="city"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_siteListFragment_to_siteDetailsFragment"
+            app:destination="@id/siteDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/siteDetailsFragment"
+        android:name="com.example.touristapp.ui.site.SiteDetailsFragment"
+        android:label="Site Details"
+        tools:layout="@layout/fragment_site_list">
+        <argument
+            android:name="site"
             app:argType="string" />
     </fragment>
 
