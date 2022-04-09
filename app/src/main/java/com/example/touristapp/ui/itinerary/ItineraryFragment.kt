@@ -50,7 +50,6 @@ class ItineraryFragment : Fragment() {
             findNavController().navigate(action)
         }
 
-        // TODO: observe the list of forageables from the view model and submit it the adapter
         viewModel.allItineraries.observe(viewLifecycleOwner) { itineraries ->
             itineraries.let {adapter.submitList(it)}
         }

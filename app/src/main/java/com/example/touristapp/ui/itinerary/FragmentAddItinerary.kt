@@ -49,8 +49,6 @@ class FragmentAddItinerary : Fragment() {
         val id = navigationArgs.id
         if (id > 0) {
 
-            // TODO: Observe a Forageable that is retrieved by id, set the forageable variable,
-            //  and call the bindForageable method
             viewModel.getItinerary(id).observe(viewLifecycleOwner) { myitnerary ->
                 myitnerary.let {
                     itinerary = myitnerary

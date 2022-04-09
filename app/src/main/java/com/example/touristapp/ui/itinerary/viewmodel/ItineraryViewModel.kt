@@ -31,7 +31,6 @@ class ItineraryViewModel(
             notes = notes
         )
 
-        // TODO: launch a coroutine and call the DAO method to add a Forageable to the database within it
         viewModelScope.launch{
             itineraryDao.insert(itinerary)
         }
@@ -54,7 +53,6 @@ class ItineraryViewModel(
             notes = notes
         )
         viewModelScope.launch(Dispatchers.IO) {
-            // TODO: call the DAO method to update a forageable to the database here
             itineraryDao.update(itinerary)
         }
     }
