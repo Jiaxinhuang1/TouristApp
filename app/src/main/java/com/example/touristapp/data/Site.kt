@@ -13,6 +13,9 @@ data class Site(
     val site_name: String,
 
     @ColumnInfo(name = "site_city")
-    val site_city: String
+    val site_city: String,
+
+    @ColumnInfo(name = "site_times")
+    val site_times: String
 
 )

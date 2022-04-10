@@ -17,6 +17,7 @@ package com.example.touristapp
 
 import android.app.Application
 import com.example.touristapp.data.ItineraryDatabase
+import com.example.touristapp.data.SiteRoomDatabase
 import com.example.touristapp.ui.itinerary.viewmodel.ItineraryViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
@@ -26,4 +27,6 @@ class BaseApplication : Application() {
     val database by lazy { ItineraryDatabase.getDatabase(this, applicationScope)}
     //addition
     val repository by lazy { ItineraryViewModel(database.itineraryDao()) }
+
+    val site_database by lazy { SiteRoomDatabase.getDatabase(this) }
 }
