@@ -5,6 +5,7 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/cityListFragment">
 
+<!--    Home-->
     <fragment
         android:id="@+id/cityListFragment"
         android:name="com.example.touristapp.ui.city.CityListFragment"
@@ -38,18 +39,35 @@
             app:argType="string" />
     </fragment>
 
+<!--    Search-->
     <fragment
         android:id="@+id/navigation_search"
         android:name="com.example.touristapp.ui.search.SearchFragment"
         android:label="@string/title_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search">
+<!--        <action-->
+<!--            android:id="@+id/action_searchFragment_to_siteDetailsFragment"-->
+<!--            app:destination="@id/siteDetailsFragment" />-->
+    </fragment>
 
+    <fragment
+        android:id="@+id/SearchMatchesFragment"
+        android:name="com.example.touristapp.ui.search.SearchMatchesFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search_matches">
+        <action
+            android:id="@+id/action_searchMatchesFragment_to_siteDetailsFragment"
+            app:destination="@id/siteDetailsFragment" />
+    </fragment>
+
+<!--    Wishlist-->
     <fragment
         android:id="@+id/navigation_wishlist"
         android:name="com.example.touristapp.ui.wishlist.WishlistFragment"
         android:label="@string/title_wishlist"
         tools:layout="@layout/fragment_wishlist" />
 
+<!--    Itinerary-->
     <fragment
         android:id="@+id/navigation_itinerary"
         android:name="com.example.touristapp.ui.itinerary.ItineraryFragment"

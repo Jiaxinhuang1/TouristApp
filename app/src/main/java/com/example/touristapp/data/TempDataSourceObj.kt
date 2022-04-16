@@ -3,6 +3,7 @@ package com.example.touristapp.data
 import com.example.touristapp.R
 import com.example.touristapp.model.City
 import com.example.touristapp.model.Site
+import java.util.*
 
 
 object TempDataSourceObj {
@@ -72,4 +73,10 @@ object TempDataSourceObj {
 //            "Modern Landmark"
 //        )
     )
+
+    fun searchSites(searchTerm: String): List<Site> {
+        val s = searchTerm.lowercase(Locale.ROOT)
+        val match = sites.filter { it.name.lowercase(Locale.ROOT).contains(s) }
+        return match
+    }
 }

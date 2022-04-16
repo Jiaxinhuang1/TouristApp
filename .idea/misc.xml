@@ -27,6 +27,10 @@
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/menu/layout_menu.xml" value="0.2546875" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/menu/menu.xml" value="0.2546875" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/menu/menu_bottom.xml" value="0.2546875" />
+        <entry key="app/src/main/res/layout/filtered_search_widget.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_search_item_textview.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/layout/fragment_search_matches.xml" value="0.23229166666666667" />
       </map>
     </option>
   </component>

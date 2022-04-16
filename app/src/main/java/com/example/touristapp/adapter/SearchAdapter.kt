@@ -17,19 +17,20 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.touristapp.R
 import com.example.touristapp.data.TempDataSourceObj
+import com.example.touristapp.model.City
 import com.example.touristapp.model.Site
 import com.example.touristapp.ui.city.CityListFragmentDirections
 import com.example.touristapp.ui.site.SiteListFragmentDirections
 
-class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter.SiteCardViewHolder>() {
+class SearchAdapter(private val dataset: List<Site>) : RecyclerView.Adapter<SearchAdapter.SiteCardViewHolder>() {
 
+    private val siteList = TempDataSourceObj.cities
     private val filteredSites: List<Site>
     init {
-        val sites = TempDataSourceObj.sites
-        filteredSites = sites.filter { it.city.equals(cityID) }
+        filteredSites = TempDataSourceObj.sites
+//        filteredSites = sites.filter { it.city.equals(cityID) }
     }
-    val wishlist = TempDataSourceObj.wishlist
-
+    val watchlist = TempDataSourceObj.wishlist
 
     //if you edit, make sure to transfer edit to wishlist siteCardViewHolder and Search viewholder
     class SiteCardViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
@@ -73,7 +74,7 @@ class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter
         }
 
         holder.siteWishlistButton.setOnClickListener{
-            if (wishlist.contains(siteItem)) {
+            if (watchlist.contains(siteItem)) {
                 val toast = Toast.makeText(context, "${siteItem.name} already in Wishlist", Toast.LENGTH_SHORT)
                 toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
                 toast.show()
@@ -82,7 +83,7 @@ class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter
                 val toast = Toast.makeText(context, "${siteItem.name} added to Wishlist", Toast.LENGTH_SHORT)
                 toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
                 toast.show()
-                wishlist.add(siteItem)
+                watchlist.add(siteItem)
             }
         }
     }

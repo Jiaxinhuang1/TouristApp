@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/cityListFragment"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/navigation_search"
         android:icon="@drawable/ic_search_black_24dp"
-        android:title="@string/title_search" />
+        android:title="@string/title_search"
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/navigation_wishlist"
-        android:icon="@drawable/ic_wishlist_black_24dp"
-        android:title="@string/title_wishlist" />
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="@string/title_wishlist"
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/navigation_itinerary"
         android:icon="@drawable/ic_itinerary_black_24dp"
-        android:title="@string/title_itinerary" />
+        android:title="@string/title_itinerary"
+        app:showAsAction="ifRoom"/>
 </menu>

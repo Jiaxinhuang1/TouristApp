@@ -15,8 +15,7 @@ import com.example.touristapp.data.TempDataSourceObj
 import com.example.touristapp.model.City
 import com.example.touristapp.ui.city.CityListFragmentDirections
 
-class CityAdapter(private val dataset: List<City>)
-    : RecyclerView.Adapter<CityAdapter.CityViewHolder>() {
+class CityAdapter(private val dataset: List<City>): RecyclerView.Adapter<CityAdapter.CityViewHolder>() {
 
     private val cityList = TempDataSourceObj.cities
 

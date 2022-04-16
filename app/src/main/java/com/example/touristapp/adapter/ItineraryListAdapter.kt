@@ -9,6 +9,8 @@ import com.example.touristapp.databinding.FragmentItineraryBinding
 import com.example.touristapp.databinding.FragmentItineraryListItemBinding
 import com.example.touristapp.model.Itinerary
 
+//class ItineraryListAdapter {}
+
 class ItineraryListAdapter(
     private val clickListener: (Itinerary) -> Unit
 ) : ListAdapter<Itinerary, ItineraryListAdapter.ItineraryViewHolder>(DiffCallback) {

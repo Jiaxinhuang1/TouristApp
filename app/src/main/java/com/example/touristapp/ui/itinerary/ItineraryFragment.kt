@@ -18,6 +18,8 @@ import com.example.touristapp.databinding.FragmentItineraryBinding
 import com.example.touristapp.ui.itinerary.viewmodel.ItineraryViewModel
 import com.example.touristapp.ui.itinerary.viewmodel.ItineraryViewModelFactory
 
+//class ItineraryFragment:Fragment(R.layout.fragment_itinerary) {}
+
 class ItineraryFragment : Fragment() {
 
     private val viewModel: ItineraryViewModel by activityViewModels {
