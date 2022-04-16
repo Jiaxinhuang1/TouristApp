@@ -4,11 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Site Details"-->
+<!--        android:textSize="34sp"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
     <TextView
+        android:id="@+id/site_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Site Details"
-        android:textSize="34sp"
-        tools:ignore="MissingConstraints" />
+        android:padding="16dp"
+        android:textAppearance="?attr/textAppearanceHeadline6" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
