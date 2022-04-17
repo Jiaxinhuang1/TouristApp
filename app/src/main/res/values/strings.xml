@@ -16,7 +16,7 @@
     <string name="menu_clear_all_history">Clear history</string>
     <string name="button_clear_search_string">Click here to clear the search string</string>
 
-    <string name="itinerary_name">Name</string>
+    <string name="itinerary_name">Place Name</string>
     <string name="itinerary_location">Location</string>
     <string name="has_visited">Had Visited Before</string>
     <string name="not_visited">Never Visited</string>
