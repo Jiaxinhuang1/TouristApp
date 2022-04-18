@@ -13,6 +13,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.touristapp.R
@@ -20,6 +21,7 @@ import com.example.touristapp.data.TempDataSourceObj
 import com.example.touristapp.model.Site
 import com.example.touristapp.ui.city.CityListFragmentDirections
 import com.example.touristapp.ui.site.SiteListFragmentDirections
+import com.example.touristapp.ui.wishlist.WishlistFragmentDirections
 
 class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter.SiteCardViewHolder>() {
 

@@ -19,6 +19,7 @@ import com.example.touristapp.MainActivity
 import com.example.touristapp.R
 import com.example.touristapp.data.TempDataSourceObj
 import com.example.touristapp.ui.site.SiteListFragmentDirections
+import com.example.touristapp.ui.wishlist.WishlistFragmentDirections
 
 class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder>() {
 
@@ -68,6 +69,7 @@ class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder
             toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
             toast.show()
             wishlist.remove(siteItem)
+            holder.view.findNavController().navigate(WishlistFragmentDirections.actionNavigationWishlistSelf())
         }
     }
 
