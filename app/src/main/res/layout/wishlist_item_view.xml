@@ -22,39 +22,50 @@
 
         <TextView
             android:id="@+id/site_name"
-            android:layout_width="210dp"
-            android:layout_height="53dp"
-            android:layout_marginTop="16dp"
-            android:fontFamily="sans-serif-black"
+            android:layout_width="188dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-medium"
             android:text="Site Name"
-            android:textColor="#673AB7"
-            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/details_button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.177"
+            app:layout_constraintHorizontal_bias="0.197"
             app:layout_constraintStart_toEndOf="@+id/site_image"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/details_button"
-            android:layout_width="90dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="93dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
             android:text="Details"
-            android:textSize="9sp"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/wishlist_button"
             app:layout_constraintStart_toEndOf="@+id/site_image"
             app:layout_constraintTop_toBottomOf="@+id/site_name" />
 
         <Button
             android:id="@+id/wishlist_button"
-            android:layout_width="90dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="96dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="sans-serif-medium"
             android:text="Remove from Wishlist"
-            android:textSize="9sp"
+            android:textAllCaps="false"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.301"
+            app:layout_constraintHorizontal_bias="0.456"
             app:layout_constraintStart_toEndOf="@+id/details_button"
             app:layout_constraintTop_toBottomOf="@+id/site_name" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
