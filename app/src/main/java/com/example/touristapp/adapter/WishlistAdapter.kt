@@ -8,10 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.accessibility.AccessibilityNodeInfo
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
@@ -29,7 +26,7 @@ class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder
     class SiteCardViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val siteNameText : TextView? = view?.findViewById(R.id.site_name)
         val siteDetailsButton: Button = view.findViewById<Button>(R.id.details_button)
-        val siteWishlistButton: Button = view.findViewById<Button>(R.id.wishlist_button)
+        val siteWishlistButton: ImageButton = view.findViewById<ImageButton>(R.id.wishlist_button)
     }
 
     override fun getItemCount(): Int = wishlist.size
@@ -57,6 +54,13 @@ class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder
 //            val intent = Intent(Intent.ACTION_VIEW, queryUrl)
 //            context.startActivity(intent)
 //        }
+
+        if (wishlist.contains(siteItem)) {
+            holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_24)
+        }
+        else {
+            holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_border_24)
+        }
 
         holder.siteDetailsButton.setOnClickListener {
 //            val action = CityListFragmentDirections.actionCityListFragmentToSiteListFragment(city = cityItem.name)

@@ -8,10 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.accessibility.AccessibilityNodeInfo
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.annotation.RequiresApi
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
@@ -38,7 +35,7 @@ class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter
         val siteImageView : ImageView? = view?.findViewById(R.id.site_image)
         val siteNameText : TextView? = view?.findViewById(R.id.site_name)
         val siteDetailsButton: Button = view.findViewById<Button>(R.id.details_button)
-        val siteWishlistButton: Button = view.findViewById<Button>(R.id.wishlist_button)
+        val siteWishlistButton: ImageButton = view.findViewById<ImageButton>(R.id.wishlist_button)
     }
 
     override fun getItemCount(): Int = filteredSites.size
@@ -60,6 +57,13 @@ class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter
         holder.siteNameText?.text = siteItem.name
         holder.siteImageView?.setImageResource(siteItem.imageResourceId)
 
+        if (wishlist.contains(siteItem)) {
+            holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_24)
+        }
+        else {
+            holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_border_24)
+        }
+
         //FOR LINKS
 //        val imdbLink = movieItem.imdb
 //        holder.movieDetailsButton.setOnClickListener {
@@ -76,11 +80,20 @@ class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter
 
         holder.siteWishlistButton.setOnClickListener{
             if (wishlist.contains(siteItem)) {
-                val toast = Toast.makeText(context, "${siteItem.name} already in Wishlist", Toast.LENGTH_SHORT)
+                holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_border_24)
+
+                val toast = Toast.makeText(context, "${siteItem.name} removed from Wishlist", Toast.LENGTH_SHORT)
                 toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
                 toast.show()
+                wishlist.remove(siteItem)
+
+//                val toast = Toast.makeText(context, "${siteItem.name} already in Wishlist", Toast.LENGTH_SHORT)
+//                toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
+//                toast.show()
             }
             else {
+                holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_24)
+
                 val toast = Toast.makeText(context, "${siteItem.name} added to Wishlist", Toast.LENGTH_SHORT)
                 toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
                 toast.show()

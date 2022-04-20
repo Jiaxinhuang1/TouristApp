@@ -36,6 +36,8 @@
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/menu/layout_menu.xml" value="0.2546875" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/menu/menu.xml" value="0.2546875" />
         <entry key="..\:/Users/jhuan/Downloads/AndroidStudioProjects/TouristApp/app/src/main/res/menu/menu_bottom.xml" value="0.2546875" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1425" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.1425" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/city_item_view.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_add_itinerary.xml" value="0.14791666666666667" />
@@ -49,7 +51,7 @@
         <entry key="app/src/main/res/layout/fragment_site_details.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_site_list.xml" value="0.24221649169921877" />
         <entry key="app/src/main/res/layout/fragment_wishlist.xml" value="0.3070556640625" />
-        <entry key="app/src/main/res/layout/site_item_view.xml" value="0.2764739990234375" />
+        <entry key="app/src/main/res/layout/site_item_view.xml" value="0.30505828857421874" />
         <entry key="app/src/main/res/layout/wishlist_item_view.xml" value="0.5136210123697916" />
       </map>
     </option>
