@@ -34,4 +34,8 @@ class SiteDetailsAdapter (private val siteID: String) {
                             ): View? {
         return inflater.inflate(R.layout.fragment_site_details, container, false)
     }
+    
+
+
+
 }

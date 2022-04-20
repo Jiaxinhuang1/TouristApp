@@ -52,12 +52,12 @@ class SiteListFragment : Fragment() {
         _binding = null
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.layout_menu, menu)
-
-        val layoutButton = menu.findItem(R.id.action_switch_layout)
-        setIcon(layoutButton)
-    }
+//    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+//        inflater.inflate(R.menu.layout_menu, menu)
+//
+//        val layoutButton = menu.findItem(R.id.action_switch_layout)
+//        setIcon(layoutButton)
+//    }
 
     private fun chooseLayout() {
         if (isLinearLayoutManager) {
@@ -68,28 +68,28 @@ class SiteListFragment : Fragment() {
         recyclerView.adapter = SiteAdapter(cityID)
     }
 
-    private fun setIcon(menuItem: MenuItem?) {
-        if (menuItem == null)
-            return
+//    private fun setIcon(menuItem: MenuItem?) {
+//        if (menuItem == null)
+//            return
+//
+//        menuItem.icon =
+//            if (isLinearLayoutManager)
+//                ContextCompat.getDrawable(this.requireContext(), R.drawable.ic_grid_layout)
+//            else ContextCompat.getDrawable(this.requireContext(), R.drawable.ic_linear_layout)
+//    }
 
-        menuItem.icon =
-            if (isLinearLayoutManager)
-                ContextCompat.getDrawable(this.requireContext(), R.drawable.ic_grid_layout)
-            else ContextCompat.getDrawable(this.requireContext(), R.drawable.ic_linear_layout)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.action_switch_layout -> {
-                // Sets isLinearLayoutManager (a Boolean) to the opposite value
-                isLinearLayoutManager = !isLinearLayoutManager
-                // Sets layout and icon
-                chooseLayout()
-                setIcon(item)
-
-                return true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        return when (item.itemId) {
+//            R.id.action_switch_layout -> {
+//                // Sets isLinearLayoutManager (a Boolean) to the opposite value
+//                isLinearLayoutManager = !isLinearLayoutManager
+//                // Sets layout and icon
+//                chooseLayout()
+//                setIcon(item)
+//
+//                return true
+//            }
+//            else -> super.onOptionsItemSelected(item)
+//        }
+//    }
 }
