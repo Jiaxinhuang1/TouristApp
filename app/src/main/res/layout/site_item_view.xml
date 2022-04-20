@@ -11,29 +11,32 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="136dp">
 
         <ImageView
             android:id="@+id/site_image"
-            android:layout_width="140dp"
-            android:layout_height="179dp"
+            android:layout_width="160dp"
+            android:layout_height="129dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.488" />
 
         <TextView
             android:id="@+id/site_name"
-            android:layout_width="188dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="28dp"
+            android:layout_width="189dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
             android:layout_marginBottom="20dp"
             android:fontFamily="sans-serif-medium"
             android:text="Site Name"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/details_button"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/site_image"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,43 +45,42 @@
             android:layout_width="89dp"
             android:layout_height="45dp"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
             android:text="Details"
             android:textAllCaps="false"
             android:textSize="12sp"
             app:layout_constraintEnd_toStartOf="@+id/wishlist_button"
-            app:layout_constraintHorizontal_bias="0.161"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/site_image"
             app:layout_constraintTop_toBottomOf="@+id/site_name" />
 
         <ImageButton
             android:id="@+id/wishlist_button"
-            android:layout_width="65dp"
-            android:layout_height="54dp"
-            android:layout_marginEnd="44dp"
-            android:layout_marginBottom="48dp"
+            android:layout_width="39dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="20dp"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_baseline_favorite_border_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <!--        <Button-->
-<!--            android:id="@+id/wishlist_button"-->
-<!--            android:layout_width="96dp"-->
-<!--            android:layout_height="66dp"-->
-<!--            android:layout_marginStart="8dp"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_marginEnd="25dp"-->
-<!--            android:fontFamily="sans-serif-medium"-->
-<!--            android:text="Remove from Wishlist"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textSize="12sp"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.456"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/details_button"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/site_name" />-->
-
+        <!--            android:id="@+id/wishlist_button"-->
+        <!--            android:layout_width="96dp"-->
+        <!--            android:layout_height="66dp"-->
+        <!--            android:layout_marginStart="8dp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_marginEnd="25dp"-->
+        <!--            android:fontFamily="sans-serif-medium"-->
+        <!--            android:text="Remove from Wishlist"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textSize="12sp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.456"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/details_button"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/site_name" />-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
