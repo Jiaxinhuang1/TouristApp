@@ -74,7 +74,8 @@ class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter
 
         holder.siteDetailsButton.setOnClickListener {
 //            val action = CityListFragmentDirections.actionCityListFragmentToSiteListFragment(city = cityItem.name)
-            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment(siteItem.name)
+//            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment(siteItem.name)
+            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment()
             holder.view.findNavController().navigate(action)
         }
 

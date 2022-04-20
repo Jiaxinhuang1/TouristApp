@@ -112,7 +112,8 @@ class SearchMatchesFragment : Fragment() {
 
                 searchViewModel.updateSearchStringList(siteName)
 
-                val action = SearchMatchesFragmentDirections.actionSearchMatchesFragmentToSiteDetailsFragment(siteName)
+//                val action = SearchMatchesFragmentDirections.actionSearchMatchesFragmentToSiteDetailsFragment(siteName)
+                val action = SearchMatchesFragmentDirections.actionSearchMatchesFragmentToSiteDetailsFragment()
                 holder.theView.findNavController().navigate(action)
             }
         }
