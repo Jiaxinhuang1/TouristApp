@@ -35,7 +35,7 @@ class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SiteCardViewHolder {
         val layout = LayoutInflater
             .from(parent.context)
-            .inflate(R.layout.wishlist_item_view, parent, false)
+            .inflate(R.layout.site_item_view, parent, false)
 
         layout.accessibilityDelegate = Accessibility
 
