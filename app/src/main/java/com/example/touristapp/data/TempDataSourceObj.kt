@@ -62,16 +62,127 @@ object TempDataSourceObj {
             "Historical Landmark"
         ),
         Site(
+            R.drawable.texas_state_capitol,
+            "Congress Avenue Bridge",
+            "Austin",
+            "Historical Landmark"
+        ),
+        Site(
+            R.drawable.texas_state_capitol,
+            "University of Texas at Austin",
+            "Austin",
+            "Historical Landmark"
+        ),
+        Site(
+            R.drawable.texas_state_capitol,
+            "Lyndon Baines Johnson Library",
+            "Austin",
+            "Museum"
+        ),
+        Site(
             R.drawable.louvre,
             "The Louvre",
             "Paris",
             "Museum"
+        ),
+        Site(
+            R.drawable.louvre,
+            "Taj Mahal",
+            "Agra",
+            "Historical Landmark"
+        ),
+        Site(
+            R.drawable.london,
+            "Great Wall of China",
+            "Beijing",
+            "Historical Landmark"
+        ),
+        Site(
+            R.drawable.london,
+            "Palace Museum",
+            "Beijing",
+            "Museum"
+        ),
+        Site(
+            R.drawable.london,
+            "Polynesian Cultural Center",
+            "Honolulu",
+            "Museum"
+        ),
+        Site(
+            R.drawable.london,
+            "Paris Las Vegas",
+            "Las Vegas",
+            "Resort"
+        ),
+        Site(
+            R.drawable.london,
+            "Museum of Modern Art",
+            "London",
+            "Museum"
+        ),
+        Site(
+            R.drawable.london,
+            "National Museum of Anthropology",
+            "Mexico City",
+            "Museum"
+        ),
+        Site(
+            R.drawable.london,
+            "Gateway of India",
+            "Mumbai",
+            "Historical Landmark"
+        ),
+        Site(
+            R.drawable.london,
+            "Empire State Building",
+            "Manhattan",
+            "Historical Landmark"
+        ),
+        Site(
+            R.drawable.london,
+            "Eiffel Tower",
+            "Paris",
+            "Historical Landmark"
+        ),
+        Site(
+            R.drawable.london,
+            "Fisherman's Wharf",
+            "San Francisco",
+            "Historical Landmark"
+        ),
+        Site(
+            R.drawable.london,
+            "Golden Gate Bridge",
+            "San Francisco",
+            "Historical Landmark"
+        ),
+        Site(
+            R.drawable.london,
+            "Legion of Honor Museum",
+            "San Francisco",
+            "Museum"
+        ),
+        Site(
+            R.drawable.london,
+            "N Seoul Tower",
+            "Seoul",
+            "Historical Landmark"
+        ),
+        Site(
+            R.drawable.london,
+            "Sensoji Temple",
+            "Tokyo",
+            "Historical Landmark"
+        ),
+        Site(
+            R.drawable.london,
+            "Bay East Garden",
+            "Singapore",
+            "Historical Landmark"
         )
-//        Site(
-//            "Tokyo Tower",
-//            "Tokyo",
-//            "Modern Landmark"
-//        )
+
+
     )
 
     fun searchSites(searchTerm: String): List<Site> {
