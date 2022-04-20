@@ -24,6 +24,7 @@ class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder
     val wishlist = TempDataSourceObj.wishlist
 
     class SiteCardViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
+        val siteImageView : ImageView? = view?.findViewById(R.id.site_image)
         val siteNameText : TextView? = view?.findViewById(R.id.site_name)
         val siteDetailsButton: Button = view.findViewById<Button>(R.id.details_button)
         val siteWishlistButton: ImageButton = view.findViewById<ImageButton>(R.id.wishlist_button)
@@ -45,15 +46,8 @@ class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder
         val siteItem = wishlist[position]
         val context = holder.view.context
 
+        holder.siteImageView?.setImageResource(siteItem.imageResourceId)
         holder.siteNameText?.text = siteItem.name
-
-        //FOR LINKS
-//        val imdbLink = movieItem.imdb
-//        holder.movieDetailsButton.setOnClickListener {
-//            val queryUrl: Uri = Uri.parse(imdbLink)
-//            val intent = Intent(Intent.ACTION_VIEW, queryUrl)
-//            context.startActivity(intent)
-//        }
 
         if (wishlist.contains(siteItem)) {
             holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_24)
@@ -69,6 +63,8 @@ class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder
         }
 
         holder.siteWishlistButton.setOnClickListener{
+            holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_border_24)
+
             val toast = Toast.makeText(context, "${siteItem.name} removed from Watchlist", Toast.LENGTH_SHORT)
             toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
             toast.show()
