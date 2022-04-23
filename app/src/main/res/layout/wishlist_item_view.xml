@@ -22,8 +22,8 @@
 
         <TextView
             android:id="@+id/site_name"
-            android:layout_width="211dp"
-            android:layout_height="48dp"
+            android:layout_width="188dp"
+            android:layout_height="30dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="28dp"
             android:layout_marginBottom="20dp"
@@ -33,6 +33,7 @@
             android:textSize="18sp"
             app:layout_constraintBottom_toTopOf="@+id/details_button"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
             app:layout_constraintStart_toEndOf="@+id/site_image"
             app:layout_constraintTop_toTopOf="parent" />
 
