@@ -92,7 +92,6 @@
             android:id="@+id/date_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="MM/DD/YYYY"
             android:maxLength="10"
             android:inputType="date" />
 
