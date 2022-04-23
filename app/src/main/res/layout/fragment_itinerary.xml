@@ -16,6 +16,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="This is place holder for empty itinerary" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_itinerary_fab"
         android:layout_width="wrap_content"

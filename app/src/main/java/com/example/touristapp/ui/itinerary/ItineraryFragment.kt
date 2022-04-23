@@ -5,14 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
+import androidx.core.view.isEmpty
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 import com.example.touristapp.BaseApplication
 import com.example.touristapp.R
 import com.example.touristapp.adapter.ItineraryListAdapter
+import com.example.touristapp.data.ItineraryDao
 import com.example.touristapp.databinding.ActivityMainBinding
 import com.example.touristapp.databinding.FragmentItineraryBinding
 import com.example.touristapp.ui.itinerary.viewmodel.ItineraryViewModel
@@ -33,6 +37,15 @@ class ItineraryFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
+    private val myRecyclerView: RecyclerView
+        get() {
+            return binding.recyclerView
+        }
+    private val myEmptyView: TextView
+        get() {
+            return binding.emptyView
+        }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -64,5 +77,13 @@ class ItineraryFragment : Fragment() {
                 )
             }
         }
+//        if (myRecyclerView.isEmpty()) {
+//            //recyclerView.setVisibility(View.GONE);
+//            myEmptyView.setVisibility(View.VISIBLE);
+//        }
+//        else {
+//            //recyclerView.setVisibility(View.VISIBLE);
+//            myEmptyView.setVisibility(View.GONE);
+//        }
     }
 }
