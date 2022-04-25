@@ -17,16 +17,17 @@
             android:id="@+id/site_image"
             android:layout_width="160dp"
             android:layout_height="129dp"
+            android:layout_marginEnd="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/site_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.488" />
 
         <TextView
             android:id="@+id/site_name"
-            android:layout_width="189dp"
+            android:layout_width="0dp"
             android:layout_height="54dp"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="20dp"
@@ -42,8 +43,8 @@
 
         <Button
             android:id="@+id/details_button"
-            android:layout_width="89dp"
-            android:layout_height="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
@@ -57,14 +58,19 @@
 
         <ImageButton
             android:id="@+id/wishlist_button"
-            android:layout_width="39dp"
-            android:layout_height="44dp"
+            android:layout_width="36dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="2dp"
             android:layout_marginEnd="28dp"
             android:layout_marginBottom="20dp"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_baseline_favorite_border_24"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/details_button"
+            app:layout_constraintTop_toBottomOf="@+id/site_name"
+            app:layout_constraintVertical_bias="1.0" />
 
         <!--        <Button-->
         <!--            android:id="@+id/wishlist_button"-->
