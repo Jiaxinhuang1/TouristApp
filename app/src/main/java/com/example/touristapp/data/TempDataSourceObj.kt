@@ -62,19 +62,19 @@ object TempDataSourceObj {
             "Historical Landmark"
         ),
         Site(
-            R.drawable.texas_state_capitol,
+            R.drawable.congress_ave_bridge,
             "Congress Avenue Bridge",
             "Austin",
             "Historical Landmark"
         ),
         Site(
-            R.drawable.texas_state_capitol,
+            R.drawable.ut_austin,
             "University of Texas at Austin",
             "Austin",
             "Historical Landmark"
         ),
         Site(
-            R.drawable.texas_state_capitol,
+            R.drawable.lbj_library,
             "Lyndon Baines Johnson Library",
             "Austin",
             "Museum"
@@ -86,97 +86,97 @@ object TempDataSourceObj {
             "Museum"
         ),
         Site(
-            R.drawable.louvre,
+            R.drawable.tal_mahal,
             "Taj Mahal",
             "Agra",
             "Historical Landmark"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.great_wall_china,
             "Great Wall of China",
             "Beijing",
             "Historical Landmark"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.palace_museum,
             "Palace Museum",
             "Beijing",
             "Museum"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.polynesian_cultural_center,
             "Polynesian Cultural Center",
             "Honolulu",
             "Museum"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.paris_las_vegas,
             "Paris Las Vegas",
             "Las Vegas",
             "Resort"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.museum_modern_art,
             "Museum of Modern Art",
             "London",
             "Museum"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.national_museum_anthropology,
             "National Museum of Anthropology",
             "Mexico City",
             "Museum"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.gateway_india,
             "Gateway of India",
             "Mumbai",
             "Historical Landmark"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.empire_state_building,
             "Empire State Building",
             "Manhattan",
             "Historical Landmark"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.eiffel_tower,
             "Eiffel Tower",
             "Paris",
             "Historical Landmark"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.fisherman_wharf,
             "Fisherman's Wharf",
             "San Francisco",
             "Historical Landmark"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.golden_gate_bridge,
             "Golden Gate Bridge",
             "San Francisco",
             "Historical Landmark"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.legion_honor_museum,
             "Legion of Honor Museum",
             "San Francisco",
             "Museum"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.n_seoul_tower,
             "N Seoul Tower",
             "Seoul",
             "Historical Landmark"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.sensoji_temple,
             "Sensoji Temple",
             "Tokyo",
             "Historical Landmark"
         ),
         Site(
-            R.drawable.london,
+            R.drawable.bayeast_garden,
             "Bay East Garden",
             "Singapore",
             "Historical Landmark"
