@@ -79,14 +79,14 @@
         tools:layout="@layout/fragment_itinerary" >
         <action
             android:id="@+id/action_navigation_itinerary_to_fragmentItineraryDetails"
-            app:destination="@id/fragmentItineraryDetails"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/slide_out_right" />
+            app:destination="@id/fragmentItineraryDetails"/>
+<!--            app:enterAnim="@android:anim/slide_in_left"-->
+<!--            app:exitAnim="@android:anim/slide_out_right" />-->
         <action
             android:id="@+id/action_navigation_itinerary_to_fragmentAddItinerary"
-            app:destination="@id/fragmentAddItinerary"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/slide_out_right" />
+            app:destination="@id/fragmentAddItinerary"/>
+<!--            app:enterAnim="@android:anim/slide_in_left"-->
+<!--            app:exitAnim="@android:anim/slide_out_right" />-->
     </fragment>
     <fragment
         android:id="@+id/fragmentAddItinerary"
@@ -95,9 +95,9 @@
         tools:layout="@layout/fragment_add_itinerary" >
         <action
             android:id="@+id/action_fragmentAddItinerary_to_navigation_itinerary"
-            app:destination="@id/navigation_itinerary"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/slide_out_right" />
+            app:destination="@id/navigation_itinerary"/>
+<!--            app:enterAnim="@android:anim/slide_in_left"-->
+<!--            app:exitAnim="@android:anim/slide_out_right" />-->
         <argument
             android:name="id"
             app:argType="long"
@@ -114,8 +114,8 @@
             app:argType="long" />
         <action
             android:id="@+id/action_fragmentItineraryDetails_to_fragmentAddItinerary"
-            app:destination="@id/fragmentAddItinerary"
-            app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/slide_out_right" />
+            app:destination="@id/fragmentAddItinerary"/>
+<!--            app:enterAnim="@android:anim/slide_in_left"-->
+<!--            app:exitAnim="@android:anim/slide_out_right" />-->
     </fragment>
 </navigation>
