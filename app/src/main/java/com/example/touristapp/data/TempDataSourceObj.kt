@@ -43,9 +43,26 @@ object TempDataSourceObj {
             "Mumbai"
         ),
         City(
-                R.drawable.tokyo,
-        "Tokyo"
+            R.drawable.tokyo,
+            "Tokyo"
+        ),
+        City(
+            R.drawable.singapore,
+            "Singapore"
+        ),
+        City(
+            R.drawable.san_francisco,
+            "San Francisco"
+        ),
+        City(
+            R.drawable.seoul,
+            "Seoul"
+        ),
+        City(
+            R.drawable.agra,
+            "Agra"
         )
+
     )
 
     val sites: List<Site> = listOf(
