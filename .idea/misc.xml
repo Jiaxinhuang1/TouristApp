@@ -31,6 +31,7 @@
         <entry key="app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1425" />
         <entry key="app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.1425" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14791666666666667" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.24322916666666666" />
         <entry key="app/src/main/res/layout/city_item_view.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_add_itinerary.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_city_list.xml" value="0.14791666666666667" />
@@ -40,7 +41,7 @@
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_search_item_textview.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_search_matches.xml" value="0.14791666666666667" />
-        <entry key="app/src/main/res/layout/fragment_site_details.xml" value="0.14791666666666667" />
+        <entry key="app/src/main/res/layout/fragment_site_details.xml" value="0.26445261637369794" />
         <entry key="app/src/main/res/layout/fragment_site_list.xml" value="0.24221649169921877" />
         <entry key="app/src/main/res/layout/fragment_wishlist.xml" value="0.3070556640625" />
         <entry key="app/src/main/res/layout/site_item_view.xml" value="0.7120025634765625" />

@@ -64,18 +64,10 @@ class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter
             holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_border_24)
         }
 
-        //FOR LINKS
-//        val imdbLink = movieItem.imdb
-//        holder.movieDetailsButton.setOnClickListener {
-//            val queryUrl: Uri = Uri.parse(imdbLink)
-//            val intent = Intent(Intent.ACTION_VIEW, queryUrl)
-//            context.startActivity(intent)
-//        }
-
         holder.siteDetailsButton.setOnClickListener {
 //            val action = CityListFragmentDirections.actionCityListFragmentToSiteListFragment(city = cityItem.name)
-//            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment(siteItem.name)
-            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment()
+            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment(siteItem.name)
+//            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment()
             holder.view.findNavController().navigate(action)
         }
 

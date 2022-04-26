@@ -105,16 +105,22 @@ class SearchMatchesFragment : Fragment() {
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             holder.boundString = stringListToDisplay[position]
             holder.textView.text = stringListToDisplay[position]
+            val context = holder.theView.context
 
-            holder.textView.setOnClickListener { v ->
-                val context = v.context
-                val siteName = holder.boundString
+            holder.textView.setOnClickListener {
+                val siteName = holder.textView.text
 
-                searchViewModel.updateSearchStringList(siteName)
+                val action = SearchFragmentDirections.actionSearchFragmentToSiteDetailsFragment(
+                    siteName as String
+                )
 
+//                val action = SearchMatchesFragmentDirections.actionSearchMatchesFragmentToSiteDetailsFragment(
+//                    siteName as String
+//                )
 //                val action = SearchMatchesFragmentDirections.actionSearchMatchesFragmentToSiteDetailsFragment(siteName)
-                val action = SearchMatchesFragmentDirections.actionSearchMatchesFragmentToSiteDetailsFragment()
                 holder.theView.findNavController().navigate(action)
+
+//                searchViewModel.updateSearchStringList(siteName)
             }
         }
 

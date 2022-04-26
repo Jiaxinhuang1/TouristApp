@@ -34,9 +34,9 @@
         android:name="com.example.touristapp.ui.site.SiteDetailsFragment"
         android:label="Site Details"
         tools:layout="@layout/fragment_site_details">
-<!--        <argument-->
-<!--            android:name="site"-->
-<!--            app:argType="string" />-->
+        <argument
+            android:name="site"
+            app:argType="string" />
     </fragment>
 
 <!--    Search-->
@@ -45,9 +45,9 @@
         android:name="com.example.touristapp.ui.search.SearchFragment"
         android:label="@string/title_search"
         tools:layout="@layout/fragment_search">
-<!--        <action-->
-<!--            android:id="@+id/action_searchFragment_to_siteDetailsFragment"-->
-<!--            app:destination="@id/siteDetailsFragment" />-->
+        <action
+            android:id="@+id/action_searchFragment_to_siteDetailsFragment"
+            app:destination="@id/siteDetailsFragment" />
     </fragment>
 
     <fragment
