@@ -37,7 +37,7 @@ class SplashScreenActivity : AppCompatActivity() {
                 }
             }
             val timer = Timer()
-            timer.schedule(myTimerTask, 1500)
+            timer.schedule(myTimerTask, 3000)
         }
     }
 }
