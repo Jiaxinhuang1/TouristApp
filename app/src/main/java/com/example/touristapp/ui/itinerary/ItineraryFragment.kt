@@ -4,11 +4,14 @@ import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
 import android.database.Cursor
 import android.os.Bundle
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
+import androidx.annotation.GravityInt
 import androidx.core.view.isEmpty
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -88,6 +91,9 @@ class ItineraryFragment : Fragment() {
                 )
             }
         }
+        val toast = Toast.makeText(context, "Click on + Icon to Add Itinerary", Toast.LENGTH_SHORT)
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.show()
         //myEmptyView.text = mainActivity.itemCount.toString()
         //myEmptyView.setVisibility(View.VISIBLE)
 

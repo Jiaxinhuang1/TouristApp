@@ -48,7 +48,6 @@ class FragmentAddItinerary : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         _binding = FragmentAddItineraryBinding.inflate(inflater, container, false)
         return binding.root
 

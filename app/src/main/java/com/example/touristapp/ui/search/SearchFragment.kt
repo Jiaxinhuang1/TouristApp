@@ -2,14 +2,12 @@ package com.example.touristapp.ui.search
 
 import android.os.Bundle
 import android.text.TextUtils
-import android.view.KeyEvent
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -72,7 +70,9 @@ class SearchFragment :
         clearButton.setOnClickListener(View.OnClickListener {
             searchEditText.text.clear()
         })
-
+        val toast = Toast.makeText(context, "Type in the Sites you want to search", Toast.LENGTH_SHORT)
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.show()
         return root
     }
 

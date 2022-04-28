@@ -2,6 +2,7 @@ package com.example.touristapp.ui.wishlist
 
 import android.os.Bundle
 import android.view.*
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -29,6 +30,9 @@ class WishlistFragment : Fragment() {
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         _binding = FragmentSiteListBinding.inflate(inflater, container, false)
+        val toast = Toast.makeText(context, "Click on heart icon in site list to add here!", Toast.LENGTH_SHORT)
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.show()
         return binding.root
     }
 
