@@ -9,5 +9,6 @@ class Site (
     @DrawableRes val imageResourceId: Int,
     val name: String,
     val city: String,
-    val category: String //ie. park, museum, historical landmark
+    val category: String, //ie. park, museum, historical landmark
+    val details: String
 )

@@ -45,6 +45,7 @@ class SiteDetailsFragment : Fragment() {
         binding.apply {
             siteImage.setImageResource(site.imageResourceId)
             siteName.text = site.name
+            siteDetails.text = site.details
         }
     }
 
