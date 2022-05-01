@@ -43,6 +43,14 @@
             app:argType="string" />
     </fragment>
 
+<!--    Map-->
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.example.touristapp.ui.map.MapFragment"
+        android:label="@string/title_map"
+        tools:layout="@layout/fragment_map">
+    </fragment>
+
 <!--    Search-->
     <fragment
         android:id="@+id/navigation_search"

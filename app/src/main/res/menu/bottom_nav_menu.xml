@@ -15,6 +15,12 @@
         app:showAsAction="ifRoom"/>
 
     <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="@string/title_map"
+        app:showAsAction="ifRoom"/>
+
+    <item
         android:id="@+id/navigation_wishlist"
         android:icon="@drawable/ic_baseline_favorite_24"
         android:title="@string/title_wishlist"

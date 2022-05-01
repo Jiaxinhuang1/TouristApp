@@ -3,6 +3,7 @@
     <string name="app_description">Plan and Keep Track Of Your Travels</string>
     <string name="title_home">Home</string>
     <string name="title_search">Search</string>
+    <string name="title_map">Map</string>
     <string name="title_wishlist">Favorites</string>
     <string name="title_itinerary">Itinerary</string>
 

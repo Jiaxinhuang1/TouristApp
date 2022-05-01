@@ -39,6 +39,7 @@
         <entry key="app/src/main/res/layout/fragment_itinerary.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_itinerary_details.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_itinerary_list_item.xml" value="0.4204325358072917" />
+        <entry key="app/src/main/res/layout/fragment_map.xml" value="0.22864583333333333" />
         <entry key="app/src/main/res/layout/fragment_search.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_search_item_textview.xml" value="0.14791666666666667" />
         <entry key="app/src/main/res/layout/fragment_search_matches.xml" value="0.14791666666666667" />
