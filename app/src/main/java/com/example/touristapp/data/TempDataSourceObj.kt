@@ -36,7 +36,7 @@ object TempDataSourceObj {
         ),
         City(
             R.drawable.manhattan,
-            "Manhattan"
+            "New York City"
         ),
         City(
             R.drawable.mumbai,
@@ -71,6 +71,8 @@ object TempDataSourceObj {
             "Zilker Park",
             "Austin",
             "Park",
+            30.263988,
+            -97.769641,
             "Zilker Park is a 361-acre park nestled in the heart of downtown, " +
                     "right off Lady Bird Lake. The park was founded in 1917 and is home to picnic" +
                     " facilities, bike/canoe rentals, a disc golf course, a large playground for " +
@@ -84,6 +86,8 @@ object TempDataSourceObj {
             "Texas State Capitol",
             "Austin",
             "Historical Landmark",
+            30.274665,
+            -97.740350,
             "Sited on one of Austin's highest points, the Capitol anchors the northern periphery" +
                     " of the downtown commercial district and commands a sweeping view towards the " +
                     "Colorado River from its southern façade. The main campus of The University of " +
@@ -102,6 +106,8 @@ object TempDataSourceObj {
             "Congress Avenue Bridge",
             "Austin",
             "Historical Landmark",
+            30.261738,
+            -97.745163,
             "Large numbers of bats began roosting in the Congress Avenue Bridge in the early " +
                     "1980s, shortly after it was renovated. Few people understood how valuable the " +
                     "bats were, and many feared them. It took a lot of effort by Bat Conservation " +
@@ -120,6 +126,8 @@ object TempDataSourceObj {
             "University of Texas at Austin",
             "Austin",
             "Historical Landmark",
+            30.284918,
+            -97.734057,
             "Nicknamed the “Forty Acres” after the size of the university’s original 1883 " +
                     "footprint, The University of Texas at Austin’s main campus is a 431-acre " +
                     "urban oasis in the heart of the capital city of Texas. Campus is home to landmarks" +
@@ -132,6 +140,8 @@ object TempDataSourceObj {
             "Lyndon Baines Johnson Library",
             "Austin",
             "Museum",
+            30.285823,
+            -97.729261,
             "While the thought of visiting a presidential library may sound like a bore, this " +
                     "one is an exception. Dedicated to the 36th president of the United States, " +
                     "Lyndon B. Johnson's library houses all the expected artifacts – including " +
@@ -145,6 +155,8 @@ object TempDataSourceObj {
             "The Louvre",
             "Paris",
             "Museum",
+            48.860294,
+            2.338629,
             "Louvre, in full Louvre Museum or French Musée du Louvre, official name Great " +
                     "Louvre or French Grand Louvre, national museum and art gallery of France, housed" +
                     " in part of a large palace in Paris that was built on the right-bank site of " +
@@ -157,6 +169,8 @@ object TempDataSourceObj {
             "Taj Mahal",
             "Agra",
             "Historical Landmark",
+            27.173891,
+            78.042068,
             "The Taj Mahal looms fairytale-like from the banks of the Yamuna River. It's " +
                     "India’s most recognized monument and is also one of the Seven Wonders of the " +
                     "World. The monument dates back to 1632 and is actually a tomb that contains the" +
@@ -171,6 +185,8 @@ object TempDataSourceObj {
             "Great Wall of China",
             "Beijing",
             "Historical Landmark",
+            40.431908,
+            116.570374,
             "The Great Wall of China is an ancient series of walls and fortifications, " +
                     "totaling more than 13,000 miles in length, located in northern China. Perhaps " +
                     "the most recognizable symbol of China and its long and vivid history, the Great" +
@@ -186,6 +202,8 @@ object TempDataSourceObj {
             "Palace Museum",
             "Beijing",
             "Museum",
+            39.915588,
+            116.396980,
             "Established in 1925, the Palace Museum is located in the imperial palace of the " +
                     "consecutive Ming (1368-1644) and Qing (1644-1911) dynasties. The magnificent " +
                     "architectural complex, also known as the Forbidden City, and the vast holdings " +
@@ -200,6 +218,8 @@ object TempDataSourceObj {
             "Polynesian Cultural Center",
             "Honolulu",
             "Museum",
+            21.638950,
+            -157.919858,
             "The Polynesian Cultural Center, voted the #1 attraction in Hawaii by USA Today, " +
                     "is located along the famous North Shore of Oahu. Explore 42 acres of tropical " +
                     "splendor featuring 6 authentic villages representing the island cultures of " +
@@ -219,6 +239,8 @@ object TempDataSourceObj {
             "Paris Las Vegas",
             "Las Vegas",
             "Resort",
+            36.112310,
+            -115.170397,
             "Get whisked away to Europe’s most romantic city at the Paris Las Vegas. Located" +
                     " at the center of the Strip, this one-of-a-kind resort and casino offers " +
                     "upscale accommodations with Parisian flair and an abundance of amenities. " +
@@ -233,8 +255,10 @@ object TempDataSourceObj {
         Site(
             R.drawable.museum_modern_art,
             "Museum of Modern Art",
-            "London",
+            "New York City",
             "Museum",
+            40.761509,
+            -73.978271,
             "The Museum of Modern Art was described by its first director as \"a torpedo " +
                     "moving through time.\" Since opening in 1929, MoMA has secured its place as" +
                     " a pioneer collector and exhibitor of modern art-from 19th-century Post-Impressionism" +
@@ -248,6 +272,8 @@ object TempDataSourceObj {
             "National Museum of Anthropology",
             "Mexico City",
             "Museum",
+            40.407669,
+            -3.688975,
             "The National Museum of Anthropology stages the Philippine ethnographic and " +
                     "terrestrial and underwater archaeological collections narrating the story of " +
                     "the Philippines from the past, as presented through artifacts as evidences of " +
@@ -258,6 +284,8 @@ object TempDataSourceObj {
             "Gateway of India",
             "Mumbai",
             "Historical Landmark",
+            18.922064,
+            72.834641,
             "The Gateway of India is an arch monument built during the 20th century in Bombay, " +
                     "India. The monument was erected to commemorate the landing of King George V and" +
                     " Queen Mary at Apollo Bunder on their visit to India in 1911. Built in " +
@@ -273,6 +301,8 @@ object TempDataSourceObj {
             "Empire State Building",
             "Manhattan",
             "Historical Landmark",
+            40.748817,
+            -73.985428,
             "Empire State Building, steel-framed skyscraper rising 102 stories that was " +
                     "completed in New York City in 1931 and was the tallest building in the world " +
                     "until 1971. The Empire State Building is located in Midtown Manhattan, on Fifth" +
@@ -285,6 +315,8 @@ object TempDataSourceObj {
             "Eiffel Tower",
             "Paris",
             "Historical Landmark",
+            48.858093,
+            2.294694,
             "Eiffel Tower, French Tour Eiffel, Parisian landmark that is also a technological" +
                     " masterpiece in building-construction history. When the French government was" +
                     " organizing the International Exposition of 1889 to celebrate the centenary of " +
@@ -300,6 +332,8 @@ object TempDataSourceObj {
             "Fisherman's Wharf",
             "San Francisco",
             "Historical Landmark",
+            37.809326,
+            -122.409981,
             "Fisherman’s Wharf, on the northern waterfront, is one of the city's busiest " +
                     "tourist areas. Souvenir shops and stalls selling crab and clam chowder in " +
                     "sourdough bread bowls appear at every turn, as do postcard views of the bay, " +
@@ -312,6 +346,8 @@ object TempDataSourceObj {
             "Golden Gate Bridge",
             "San Francisco",
             "Historical Landmark",
+            37.769722,
+            -122.476944,
             "Crossing the strait of the Golden Gate from San Francisco's Presidio to the Marin" +
                     " headlands is the world-renowned Golden Gate Bridge, easily identified by its" +
                     " International Orange color. Once called \"the bridge that couldn't be built,\" " +
@@ -325,6 +361,8 @@ object TempDataSourceObj {
             "Legion of Honor Museum",
             "San Francisco",
             "Museum",
+            37.784466,
+            -122.500842,
             "The 1.7 mile-long bridge is anchored by towers that reach 746 feet skyward and " +
                     "was once taller than any building in San Francisco! To support the suspended " +
                     "roadway, two cables—each more than 7,000 feet in length and containing 80,000 " +
@@ -336,6 +374,8 @@ object TempDataSourceObj {
             "N Seoul Tower",
             "Seoul",
             "Historical Landmark",
+            37.551170,
+            126.988228,
             "Namsan Seoul Tower was the first multipurpose tower to be established in Korea, " +
                     "effectively incorporating a sightseeing observatory to a broadcasting tower. " +
                     "For the past 40 years, Namsan Seoul Tower has served as an iconic landmark of " +
@@ -352,6 +392,8 @@ object TempDataSourceObj {
             "Sensoji Temple",
             "Tokyo",
             "Historical Landmark",
+            35.714661,
+            139.796783,
             "Sensoji is perhaps the most famous and photographed of Tokyo's temples. It is " +
                     "the oldest Buddhist temple in the capital, and the five-story pagoda, trails " +
                     "of incense and vast eaves will take you back to a Tokyo of time gone by. The " +
@@ -367,6 +409,8 @@ object TempDataSourceObj {
             "Bay East Garden",
             "Singapore",
             "Historical Landmark",
+            1.282375,
+            103.864273,
             "\"Gardens by the Bay is not just about the domes and the supertrees! It took us " +
                     "a while to realise that Gardens by the Bay was actually made up of not just one" +
                     " but three separate gardens – Bay South, Bay East and Bay Central Gardens. Bay " +
