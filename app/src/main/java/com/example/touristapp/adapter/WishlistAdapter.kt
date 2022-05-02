@@ -1,5 +1,7 @@
 package com.example.touristapp.adapter
 
+import android.animation.ObjectAnimator
+import android.animation.PropertyValuesHolder
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
@@ -58,8 +60,8 @@ class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder
 
         holder.siteDetailsButton.setOnClickListener {
 //            val action = CityListFragmentDirections.actionCityListFragmentToSiteListFragment(city = cityItem.name)
-//            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment(siteItem.name)
-            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment()
+            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment(siteItem.name)
+//            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment()
             holder.view.findNavController().navigate(action)
         }
 
@@ -70,6 +72,7 @@ class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder
             toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
             toast.show()
             wishlist.remove(siteItem)
+            scaler(holder.siteWishlistButton)
             holder.view.findNavController().navigate(WishlistFragmentDirections.actionNavigationWishlistSelf())
         }
     }
@@ -89,5 +92,16 @@ class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder
                 )
             info?.addAction(customClick)
         }
+    }
+    private fun scaler(imageButton: ImageButton) {
+        //scale animation
+        val scaleX = PropertyValuesHolder.ofFloat(View.SCALE_X, 0.5f)
+        val scaleY = PropertyValuesHolder.ofFloat(View.SCALE_Y, 0.5f)
+        val animator = ObjectAnimator.ofPropertyValuesHolder(imageButton, scaleX, scaleY)
+        animator.repeatCount = 1
+        animator.duration = 50
+        animator.repeatMode = ObjectAnimator.REVERSE
+        //animator.disableViewDuringAnimation(button)
+        animator.start()
     }
 }

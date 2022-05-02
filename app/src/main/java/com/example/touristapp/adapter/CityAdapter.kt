@@ -17,7 +17,7 @@ import com.example.touristapp.ui.city.CityListFragmentDirections
 
 class CityAdapter(private val dataset: List<City>): RecyclerView.Adapter<CityAdapter.CityViewHolder>() {
 
-    private val cityList = TempDataSourceObj.cities
+    private val cityList = TempDataSourceObj.cities.sortedBy { it.name?.toString() }
 
     class CityViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         val cityNameText : TextView? = view?.findViewById(R.id.city_name)

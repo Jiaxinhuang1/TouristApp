@@ -69,8 +69,8 @@ class SearchAdapter(private val dataset: List<Site>) : RecyclerView.Adapter<Sear
 
         holder.siteDetailsButton.setOnClickListener {
 //            val action = CityListFragmentDirections.actionCityListFragmentToSiteListFragment(city = cityItem.name)
-//            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment(siteItem.name)
-            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment()
+            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment(siteItem.name)
+//            val action = SiteListFragmentDirections.actionSiteListFragmentToSiteDetailsFragment()
             holder.view.findNavController().navigate(action)
         }
 

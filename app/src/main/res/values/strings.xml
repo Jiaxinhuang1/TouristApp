@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Around the World</string>
+    <string name="app_description">Plan and Keep Track Of Your Travels</string>
     <string name="title_home">Home</string>
     <string name="title_search">Search</string>
+    <string name="title_map">Map</string>
     <string name="title_wishlist">Favorites</string>
     <string name="title_itinerary">Itinerary</string>
 
@@ -17,11 +19,11 @@
     <string name="button_clear_search_string">Click here to clear the search string</string>
 
     <string name="itinerary_name">Place Name</string>
-    <string name="itinerary_location">Location</string>
+    <string name="itinerary_location">Place Location</string>
     <string name="has_visited">Had Visited Before</string>
     <string name="not_visited">Never Visited</string>
     <string name="notes">Notes</string>
-    <string name="date">Date</string>
+    <string name="date">Date (MM/DD/YYYY)</string>
     <string name="save">Save</string>
     <string name="delete">Delete</string>
 </resources>

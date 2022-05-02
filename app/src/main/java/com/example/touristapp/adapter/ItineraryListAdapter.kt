@@ -41,6 +41,7 @@ class ItineraryListAdapter(
         return ItineraryViewHolder(
             FragmentItineraryListItemBinding.inflate(layoutInflater, parent, false)
         )
+
     }
 
     override fun onBindViewHolder(holder: ItineraryViewHolder, position: Int) {

@@ -34,5 +34,5 @@
     <dimen name="detail_backdrop_height">400dp</dimen>
     <dimen name="card_margin">16dp</dimen>
 
-    <dimen name="fab_margin">75dp</dimen>
+    <dimen name="fab_margin">55dp</dimen>
 </resources>
