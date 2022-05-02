@@ -68,7 +68,7 @@ class WishlistAdapter(): RecyclerView.Adapter<WishlistAdapter.SiteCardViewHolder
         holder.siteWishlistButton.setOnClickListener{
             holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_border_24)
 
-            val toast = Toast.makeText(context, "${siteItem.name} removed from Watchlist", Toast.LENGTH_SHORT)
+            val toast = Toast.makeText(context, "${siteItem.name} removed from Favorites", Toast.LENGTH_SHORT)
             toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
             toast.show()
             wishlist.remove(siteItem)

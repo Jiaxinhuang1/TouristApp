@@ -61,7 +61,6 @@ class MapFragment : Fragment(), OnMapReadyCallback {
 
             map.addMarker(MarkerOptions().position(point))
         }
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

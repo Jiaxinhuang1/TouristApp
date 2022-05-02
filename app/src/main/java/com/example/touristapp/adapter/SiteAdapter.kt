@@ -77,7 +77,7 @@ class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter
             if (wishlist.contains(siteItem)) {
                 holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_border_24)
 
-                val toast = Toast.makeText(context, "${siteItem.name} removed from Wishlist", Toast.LENGTH_SHORT)
+                val toast = Toast.makeText(context, "${siteItem.name} removed from Favorites", Toast.LENGTH_SHORT)
                 toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
                 toast.show()
                 scaler(holder.siteWishlistButton)
@@ -90,7 +90,7 @@ class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter
             else {
                 holder.siteWishlistButton.setImageResource(R.drawable.ic_baseline_favorite_24)
 
-                val toast = Toast.makeText(context, "${siteItem.name} added to Wishlist", Toast.LENGTH_SHORT)
+                val toast = Toast.makeText(context, "${siteItem.name} added to Favorites", Toast.LENGTH_SHORT)
                 toast.setGravity(Gravity.TOP or Gravity.CENTER_HORIZONTAL, 0, 0)
                 toast.show()
                 scaler(holder.siteWishlistButton)
