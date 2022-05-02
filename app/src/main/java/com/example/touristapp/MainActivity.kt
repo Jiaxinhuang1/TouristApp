@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.cityListFragment,
                 R.id.navigation_search,
+                R.id.navigation_map,
                 R.id.navigation_wishlist,
                 R.id.navigation_itinerary
             )
