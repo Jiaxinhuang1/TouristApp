@@ -26,7 +26,7 @@ class SiteAdapter(private val cityID: String) : RecyclerView.Adapter<SiteAdapter
 
     private val filteredSites: List<Site>
     init {
-        val sites = TempDataSourceObj.sites
+        val sites = TempDataSourceObj.sites.sortedBy { it.name?.toString() }
         filteredSites = sites.filter { it.city.equals(cityID) }
     }
     val wishlist = TempDataSourceObj.wishlist
