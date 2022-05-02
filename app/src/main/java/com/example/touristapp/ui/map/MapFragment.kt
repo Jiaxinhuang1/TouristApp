@@ -59,25 +59,5 @@ class MapFragment : Fragment(), OnMapReadyCallback {
             map.addMarker(MarkerOptions().position(point))
         }
 
-
-//        //These coordinates represent the lattitude and longitude of the Googleplex.
-//        val latitude = 37.422160
-//        val longitude = -122.084270
-//        val zoomLevel = 15f
-//        val overlaySize = 100f
-//
-//        val homeLatLng = LatLng(latitude, longitude)
-//        map.moveCamera(CameraUpdateFactory.newLatLngZoom(homeLatLng, zoomLevel))
-//        map.addMarker(MarkerOptions().position(homeLatLng))
-
-//        val googleOverlay = GroundOverlayOptions()
-//            .image(BitmapDescriptorFactory.fromResource(R.drawable.android))
-//            .position(homeLatLng, overlaySize)
-//        map.addGroundOverlay(googleOverlay)
-
-//        setMapLongClick(map)
-//        setPoiClick(map)
-//        setMapStyle(map)
-//        enableMyLocation()
     }
 }
