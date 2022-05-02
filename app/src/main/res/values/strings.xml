@@ -26,4 +26,9 @@
     <string name="date">Date (MM/DD/YYYY)</string>
     <string name="save">Save</string>
     <string name="delete">Delete</string>
+
+    <string name="normal_map">Normal Map</string>
+    <string name="hybrid_map">Hybrid Map</string>
+    <string name="satellite_map">Satellite Map</string>
+    <string name="terrain_map">Terrain Map</string>
 </resources>

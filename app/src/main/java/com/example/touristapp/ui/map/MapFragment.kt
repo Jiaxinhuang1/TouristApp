@@ -4,9 +4,7 @@ import android.location.Address
 import android.location.Geocoder
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.fragment.app.Fragment
 import com.example.touristapp.R
 import com.example.touristapp.data.TempDataSourceObj
@@ -27,6 +25,11 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         var mapFragment : SupportMapFragment?=null
         val TAG: String = MapFragment::class.java.simpleName
         fun newInstance() = MapFragment()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
     }
 
     override fun onCreateView(
@@ -59,5 +62,31 @@ class MapFragment : Fragment(), OnMapReadyCallback {
             map.addMarker(MarkerOptions().position(point))
         }
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.map_options, menu)
+    }
+
+    // Called whenever an item in your options menu is selected.
+    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        // Change the map type based on the user's selection.
+        R.id.normal_map -> {
+            map.mapType = GoogleMap.MAP_TYPE_NORMAL
+            true
+        }
+        R.id.hybrid_map -> {
+            map.mapType = GoogleMap.MAP_TYPE_HYBRID
+            true
+        }
+        R.id.satellite_map -> {
+            map.mapType = GoogleMap.MAP_TYPE_SATELLITE
+            true
+        }
+        R.id.terrain_map -> {
+            map.mapType = GoogleMap.MAP_TYPE_TERRAIN
+            true
+        }
+        else -> super.onOptionsItemSelected(item)
     }
 }
